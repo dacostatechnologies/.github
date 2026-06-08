@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -7,91 +7,86 @@ const root = join(__dirname, '..');
 const dist = join(root, 'dist');
 mkdirSync(dist, { recursive: true });
 
+const brandIcon = readFileSync(join(root, 'assets', 'brand', 'logoicon-white-on-black.png')).toString('base64');
+
 const palette = {
-  carbon: '#050706',
-  graphite: '#111514',
-  graphite2: '#171D1A',
-  slate: '#6F7773',
-  line: '#26302B',
-  paper: '#F4F7F2',
+  black: '#000000',
+  carbon: '#050505',
+  graphite: '#0D0D0D',
+  graphite2: '#141414',
+  panel: '#080808',
+  line: '#242424',
+  lineStrong: '#343434',
+  paper: '#F6F6F6',
   white: '#FFFFFF',
-  lime: '#A6D83D',
-  green: '#49C776',
-  teal: '#22C7B8',
-  cyan: '#43D9E8',
+  slate: '#9A9A9A',
+  muted: '#6C6C6C',
+  dim: '#3D3D3D',
 };
 
 const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="1200" height="330" viewBox="0 0 1200 330" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Dacosta Technologies</title>
-  <desc id="desc">Dacosta Technologies — software, infrastructure, and systems design built with precision.</desc>
+  <desc id="desc">Dacosta Technologies — software, infrastructure, automation, and systems architecture built with precision.</desc>
   <defs>
-    <linearGradient id="accent" x1="180" y1="60" x2="980" y2="270" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="${palette.lime}"/>
-      <stop offset="0.42" stop-color="${palette.green}"/>
-      <stop offset="0.75" stop-color="${palette.teal}"/>
-      <stop offset="1" stop-color="${palette.cyan}"/>
+    <linearGradient id="neutral-sheen" x1="64" y1="58" x2="1120" y2="284" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="${palette.white}" stop-opacity="0.14"/>
+      <stop offset="0.48" stop-color="${palette.white}" stop-opacity="0.03"/>
+      <stop offset="1" stop-color="${palette.white}" stop-opacity="0.1"/>
     </linearGradient>
-    <linearGradient id="soft-accent" x1="0" y1="0" x2="1200" y2="330" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="${palette.lime}" stop-opacity="0.28"/>
-      <stop offset="0.5" stop-color="${palette.teal}" stop-opacity="0.16"/>
-      <stop offset="1" stop-color="${palette.cyan}" stop-opacity="0.24"/>
+    <linearGradient id="neutral-line" x1="78" y1="0" x2="1060" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="${palette.white}" stop-opacity="0.92"/>
+      <stop offset="0.5" stop-color="${palette.slate}" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="${palette.white}" stop-opacity="0.26"/>
     </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
-      <feGaussianBlur stdDeviation="7" result="blur"/>
-      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.20 0 0 0 0 0.95 0 0 0 0 0.75 0 0 0 0.35 0" result="colored"/>
-      <feMerge>
-        <feMergeNode in="colored"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
     <clipPath id="frame-clip">
       <rect x="22" y="22" width="1156" height="286" rx="30"/>
     </clipPath>
+    <clipPath id="brand-icon-clip">
+      <rect x="74" y="70" width="168" height="168" rx="30"/>
+    </clipPath>
   </defs>
 
-  <rect width="1200" height="330" rx="34" fill="${palette.carbon}"/>
-  <rect x="22" y="22" width="1156" height="286" rx="30" fill="${palette.graphite}" stroke="${palette.line}"/>
+  <rect width="1200" height="330" rx="34" fill="${palette.black}"/>
+  <rect x="22" y="22" width="1156" height="286" rx="30" fill="${palette.carbon}" stroke="${palette.line}"/>
+
   <g clip-path="url(#frame-clip)">
-    <path d="M-60 308 C160 190 285 377 492 224 C709 63 865 139 1262 -24" stroke="url(#soft-accent)" stroke-width="84" stroke-linecap="round" opacity="0.26"/>
-    <path d="M1040 -40 L1200 120 L1098 222 L938 62 Z" fill="url(#accent)" opacity="0.08"/>
-    <path d="M64 268 H1136" stroke="${palette.line}" stroke-width="1"/>
+    <path d="M-60 282 C154 190 320 342 522 210 C738 68 908 144 1270 18" stroke="url(#neutral-sheen)" stroke-width="72" stroke-linecap="round" opacity="0.72"/>
     <path d="M64 74 H1136" stroke="${palette.line}" stroke-width="1"/>
-    <path d="M964 38 V292" stroke="${palette.line}" stroke-width="1"/>
+    <path d="M64 268 H1136" stroke="${palette.line}" stroke-width="1"/>
+    <path d="M958 38 V292" stroke="${palette.line}" stroke-width="1"/>
+    <path d="M1008 38 V292" stroke="${palette.line}" stroke-width="1" opacity="0.55"/>
+    <path d="M1058 38 V292" stroke="${palette.line}" stroke-width="1" opacity="0.32"/>
   </g>
 
-  <g transform="translate(78 84)">
-    <rect x="0" y="0" width="156" height="156" rx="30" fill="${palette.carbon}" stroke="${palette.line}"/>
-    <path d="M49 32 H84 C112 32 130 51 130 78 C130 105 112 124 84 124 H49 V32Z" stroke="${palette.paper}" stroke-width="10" stroke-linejoin="round"/>
-    <path d="M89 48 C73 51 62 62 62 78 C62 94 73 105 89 108" stroke="url(#accent)" stroke-width="10" stroke-linecap="round" filter="url(#glow)"/>
-    <path d="M34 36 L34 120" stroke="url(#accent)" stroke-width="5" stroke-linecap="round" opacity="0.94"/>
-    <circle cx="34" cy="36" r="5" fill="${palette.lime}"/>
-    <circle cx="34" cy="120" r="5" fill="${palette.cyan}"/>
+  <g clip-path="url(#brand-icon-clip)">
+    <image href="data:image/png;base64,${brandIcon}" x="74" y="70" width="168" height="168" preserveAspectRatio="xMidYMid slice"/>
+  </g>
+  <rect x="74" y="70" width="168" height="168" rx="30" stroke="${palette.lineStrong}"/>
+
+  <g transform="translate(282 88)">
+    <text x="0" y="58" fill="${palette.paper}" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="53" font-weight="520" letter-spacing="0.018em">dacosta technologies</text>
+    <path d="M4 124 H514" stroke="url(#neutral-line)" stroke-width="2" stroke-linecap="round"/>
+    <text x="4" y="165" fill="${palette.paper}" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="21" font-weight="460">Software, infrastructure, automation, and systems architecture.</text>
+    <text x="4" y="196" fill="${palette.slate}" font-family="JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="12" letter-spacing="0.15em">LESS NOISE · MORE ARCHITECTURE</text>
   </g>
 
-  <g transform="translate(270 88)">
-    <text x="0" y="56" fill="${palette.paper}" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="54" font-weight="750" letter-spacing="0.04em">DACOSTA</text>
-    <text x="4" y="96" fill="${palette.slate}" font-family="JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="17" font-weight="500" letter-spacing="0.28em">TECHNOLOGIES</text>
-    <path d="M4 124 H426" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
-    <text x="4" y="165" fill="${palette.paper}" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22" font-weight="520">Software, infrastructure, and systems design built with precision.</text>
-  </g>
-
-  <g transform="translate(1000 96)" font-family="JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="12" letter-spacing="0.12em">
-    <text x="0" y="0" fill="${palette.slate}">PRODUCT</text>
+  <g transform="translate(1002 96)" font-family="JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="12" letter-spacing="0.12em">
+    <text x="0" y="0" fill="${palette.slate}">SOFTWARE</text>
     <text x="0" y="28" fill="${palette.slate}">BACKEND</text>
     <text x="0" y="56" fill="${palette.slate}">DEVOPS</text>
     <text x="0" y="84" fill="${palette.slate}">LINUX</text>
     <text x="0" y="112" fill="${palette.slate}">AUTOMATION</text>
     <text x="0" y="140" fill="${palette.slate}">ARCHITECTURE</text>
-    <circle cx="-24" cy="-4" r="4" fill="${palette.lime}"/>
-    <circle cx="-24" cy="24" r="4" fill="${palette.green}"/>
-    <circle cx="-24" cy="52" r="4" fill="${palette.teal}"/>
-    <circle cx="-24" cy="80" r="4" fill="${palette.cyan}"/>
-    <circle cx="-24" cy="108" r="4" fill="${palette.green}" opacity="0.8"/>
-    <circle cx="-24" cy="136" r="4" fill="${palette.lime}" opacity="0.7"/>
+    <circle cx="-24" cy="-4" r="4" fill="${palette.white}"/>
+    <circle cx="-24" cy="24" r="4" fill="${palette.slate}"/>
+    <circle cx="-24" cy="52" r="4" fill="${palette.muted}"/>
+    <circle cx="-24" cy="80" r="4" fill="${palette.slate}"/>
+    <circle cx="-24" cy="108" r="4" fill="${palette.muted}"/>
+    <circle cx="-24" cy="136" r="4" fill="${palette.white}" opacity="0.58"/>
   </g>
 
-  <text x="78" y="286" fill="${palette.slate}" font-family="JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="12" letter-spacing="0.12em">LESS NOISE · MORE ARCHITECTURE · TECHNOLOGY BUILT WITH PRECISION</text>
+  <text x="78" y="286" fill="${palette.muted}" font-family="JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="12" letter-spacing="0.12em">TECHNOLOGY BUILT WITH PRECISION · BRAZILIAN ENGINEERING COMPANY</text>
 </svg>
 `;
 

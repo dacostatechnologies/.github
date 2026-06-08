@@ -8,24 +8,32 @@ The brand should feel like a technical signature: quiet, structured, premium, in
 
 ## Visual direction
 
-- Primary base: black, graphite, off-white.
-- Accent range: controlled lime, green, teal, and cyan.
-- Avoid: generic neon tech, excessive badges, noisy animations, overdecorated gradients.
-- Prefer: geometric composition, structural lines, restrained motion, strong contrast, clear typography.
+- Primary base: black, graphite, neutral gray, and off-white.
+- Accent system: neutral contrast only — white, gray, linework, spacing, and typography.
+- Avoid: generic neon tech, excessive badges, noisy animations, colorful gradients, and overdecorated visuals.
+- Prefer: geometric composition, structural lines, restrained motion, strong contrast, clear typography, and brand-mark consistency.
 
 ## Palette
 
 ```text
-carbon        #050706
-graphite      #111514
-slate         #6F7773
-paper         #F4F7F2
+black         #000000
+carbon        #050505
+graphite      #0D0D0D
+panel         #080808
+line          #242424
+line-strong   #343434
+slate         #9A9A9A
+muted         #646464
+paper         #F6F6F6
 white         #FFFFFF
-lime          #A6D83D
-green         #49C776
-teal          #22C7B8
-cyan          #43D9E8
 ```
+
+## Logo usage
+
+- Use the icon for avatars, favicons, small cards, and square surfaces.
+- Use the logomark/wordmark for headers, READMEs, website hero sections, and institutional material.
+- Prefer monochrome usage. Do not apply colorful gradients to the logo.
+- Keep generous spacing around the mark. The brand should feel precise, not crowded.
 
 ## Voice
 
@@ -37,7 +45,7 @@ cyan          #43D9E8
 ## Core line
 
 ```text
-Software, infrastructure, and systems design built with precision.
+Software, infrastructure, automation, and systems architecture.
 ```
 
 ## Optional short lines
