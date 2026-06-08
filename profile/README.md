@@ -14,8 +14,7 @@
 </p>
 
 <p align="center">
-  Dacosta Technologies is a Brazilian engineering company focused on product engineering,
-  backend systems, automation, Linux-based infrastructure, DevOps, and solutions architecture.
+  Dacosta Technologies is a Brazilian software engineering company focused on designing, building, and operating digital systems across web, mobile, backend, infrastructure, automation, and cloud-native environments.
 </p>
 
 <p align="center">
@@ -34,12 +33,12 @@ We design and implement systems where product, infrastructure, and operation nee
 
 | Capability | Focus |
 |:--|:--|
-| **Product engineering** | Web platforms, internal products, SaaS foundations, dashboards, operational tools. |
-| **Backend systems** | APIs, service boundaries, domain modeling, distributed workflows, event-driven architecture. |
-| **Infrastructure & DevOps** | Linux environments, CI/CD, containers, deployment automation, observability, operational reliability. |
-| **Automation** | Process automation, data pipelines, internal tooling, integrations, workflow orchestration. |
-| **Architecture & consulting** | Technical discovery, system design, modernization, maintainability, scalability, and operational strategy. |
-| **Interfaces & design systems** | Minimal, functional interfaces supported by clear information architecture and modern frontend tooling. |
+| **Product engineering** | Web platforms, mobile applications, dashboards, internal tools, and SaaS products |
+| **Backend systems** | APIs, services, integrations, event-driven systems, and domain-oriented platforms |
+| **Frontend & web** | Modern interfaces, design systems, web applications, and frontend architecture |
+| **Mobile** | Cross-platform and native-oriented mobile experiences when the product requires it |
+| **Infrastructure & DevOps** | Linux-based environments, CI/CD, deployment automation, observability, and operations |
+| **Architecture & consulting** | Technical planning, system design, refactoring, modernization, and engineering direction |
 
 <br />
 
