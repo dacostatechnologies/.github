@@ -1,0 +1,16 @@
+{
+  "name": "dacosta-technologies-github-profile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GitHub organization profile for Da Costa Technologies.",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-hero.js && node scripts/generate-capabilities-map.js && node scripts/generate-stack-strip.js",
+    "check:syntax": "for file in scripts/*.js; do node --check \"$file\"; done",
+    "check:assets": "node scripts/validate-assets.js",
+    "check": "npm run check:syntax && npm run generate && npm run check:assets"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
