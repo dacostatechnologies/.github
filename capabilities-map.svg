@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Dacosta Technologies capability map</title>
+  <desc id="desc">Capability map connecting product engineering, backend systems, data, automation, interfaces, infrastructure, security, and architecture.</desc>
+  <defs>
+    <linearGradient id="line-soft" x1="80" y1="40" x2="1120" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.64"/>
+      <stop offset="0.5" stop-color="#9A9A9A" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.22"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="#000000"/>
+  <rect x="20" y="20" width="1160" height="320" rx="24" fill="#050505" stroke="#242424"/>
+
+  <g opacity="0.78">
+    <path d="M186 92 L478 92" stroke="#343434" stroke-width="1.4" stroke-dasharray="0" opacity="0.68"/>
+<path d="M478 92 L770 92" stroke="#343434" stroke-width="1.4" stroke-dasharray="0" opacity="0.68"/>
+<path d="M770 92 L1040 92" stroke="#343434" stroke-width="1.4" stroke-dasharray="0" opacity="0.68"/>
+<path d="M186 268 L478 268" stroke="#343434" stroke-width="1.4" stroke-dasharray="0" opacity="0.68"/>
+<path d="M478 268 L770 268" stroke="#343434" stroke-width="1.4" stroke-dasharray="0" opacity="0.68"/>
+<path d="M770 268 L1040 268" stroke="#343434" stroke-width="1.4" stroke-dasharray="0" opacity="0.68"/>
+<path d="M478 92 L478 268" stroke="#343434" stroke-width="1.4" stroke-dasharray="5 7" opacity="0.68"/>
+<path d="M770 92 L770 268" stroke="#343434" stroke-width="1.4" stroke-dasharray="5 7" opacity="0.68"/>
+<path d="M186 92 L186 268" stroke="url(#line-soft)" stroke-width="1.4" stroke-dasharray="5 7" opacity="0.38"/>
+<path d="M1040 92 L1040 268" stroke="url(#line-soft)" stroke-width="1.4" stroke-dasharray="5 7" opacity="0.38"/>
+<path d="M478 92 L770 268" stroke="url(#line-soft)" stroke-width="1.4" stroke-dasharray="5 7" opacity="0.38"/>
+<path d="M770 92 L478 268" stroke="url(#line-soft)" stroke-width="1.4" stroke-dasharray="5 7" opacity="0.38"/>
+  </g>
+
+  <circle cx="624" cy="180" r="54" fill="#080808" stroke="url(#line-soft)" stroke-width="2"/>
+  <text x="624" y="173" text-anchor="middle" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="720">Dacosta</text>
+  <text x="624" y="198" text-anchor="middle" fill="#9A9A9A" font-family="JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="10" letter-spacing="0.14em">SYSTEMS</text>
+
+  
+    <g transform="translate(186 92)">
+      <rect x="-116" y="-52" width="232" height="104" rx="20" fill="#080808" stroke="#242424"/>
+      <rect x="-116" y="-52" width="4" height="104" rx="2" fill="#FFFFFF" opacity="0.86"/>
+      <circle cx="90" cy="-27" r="5" fill="#FFFFFF" opacity="0.86"/>
+      <text x="-88" y="-7" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="650">Product</text>
+      <text x="-88" y="21" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="650">Engineering</text>
+      <text x="-88" y="42" fill="#646464" font-family="JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="10" letter-spacing="0.14em">PRODUCT</text>
+    </g>
+
+    <g transform="translate(478 92)">
+      <rect x="-116" y="-52" width="232" height="104" rx="20" fill="#080808" stroke="#242424"/>
+      <rect x="-116" y="-52" width="4" height="104" rx="2" fill="#9A9A9A" opacity="0.86"/>
+      <circle cx="90" cy="-27" r="5" fill="#9A9A9A" opacity="0.86"/>
+      <text x="-88" y="-7" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="650">Backend</text>
+      <text x="-88" y="21" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="650">Systems</text>
+      <text x="-88" y="42" fill="#646464" font-family="JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="10" letter-spacing="0.14em">BACKEND</text>
+    </g>
+
+    <g transform="translate(770 92)">
+      <rect x="-116" y="-52" width="232" height="104" rx="20" fill="#080808" stroke="#242424"/>
+      <rect x="-116" y="-52" width="4" height="104" rx="2" fill="#646464" opacity="0.86"/>
+      <circle cx="90" cy="-27" r="5" fill="#646464" opacity="0.86"/>
+      <text x="-88" y="-7" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="650">Data &amp;</text>
+      <text x="-88" y="21" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="650">Pipelines</text>
+      <text x="-88" y="42" fill="#646464" font-family="JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="10" letter-spacing="0.14em">DATA</text>
+    </g>
+
+    <g transform="translate(1040 92)">
+      <rect x="-116" y="-52" width="232" height="104" rx="20" fill="#080808" stroke="#242424"/>
+      <rect x="-116" y="-52" width="4" height="104" rx="2" fill="#9A9A9A" opacity="0.86"/>
+      <circle cx="90" cy="-27" r="5" fill="#9A9A9A" opacity="0.86"/>
+      <text x="-88" y="-7" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="650">Automation</text>
+      <text x="-88" y="21" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="650">&amp; Tooling</text>
+      <text x="-88" y="42" fill="#646464" font-family="JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="10" letter-spacing="0.14em">AUTOMATION</text>
+    </g>
+
+    <g transform="translate(186 268)">
+      <rect x="-116" y="-52" width="232" height="104" rx="20" fill="#080808" stroke="#242424"/>
+      <rect x="-116" y="-52" width="4" height="104" rx="2" fill="#646464" opacity="0.86"/>
+      <circle cx="90" cy="-27" r="5" fill="#646464" opacity="0.86"/>
+      <text x="-88" y="-7" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="650">Interfaces</text>
+      <text x="-88" y="21" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="650">&amp; Design Systems</text>
+      <text x="-88" y="42" fill="#646464" font-family="JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="10" letter-spacing="0.14em">INTERFACES</text>
+    </g>
+
+    <g transform="translate(478 268)">
+      <rect x="-116" y="-52" width="232" height="104" rx="20" fill="#080808" stroke="#242424"/>
+      <rect x="-116" y="-52" width="4" height="104" rx="2" fill="#FFFFFF" opacity="0.86"/>
+      <circle cx="90" cy="-27" r="5" fill="#FFFFFF" opacity="0.86"/>
+      <text x="-88" y="-7" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="650">Infrastructure</text>
+      <text x="-88" y="21" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="650">&amp; DevOps</text>
+      <text x="-88" y="42" fill="#646464" font-family="JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="10" letter-spacing="0.14em">INFRA</text>
+    </g>
+
+    <g transform="translate(770 268)">
+      <rect x="-116" y="-52" width="232" height="104" rx="20" fill="#080808" stroke="#242424"/>
+      <rect x="-116" y="-52" width="4" height="104" rx="2" fill="#9A9A9A" opacity="0.86"/>
+      <circle cx="90" cy="-27" r="5" fill="#9A9A9A" opacity="0.86"/>
+      <text x="-88" y="-7" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="650">Security</text>
+      <text x="-88" y="21" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="650">&amp; Identity</text>
+      <text x="-88" y="42" fill="#646464" font-family="JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="10" letter-spacing="0.14em">SECURITY</text>
+    </g>
+
+    <g transform="translate(1040 268)">
+      <rect x="-116" y="-52" width="232" height="104" rx="20" fill="#080808" stroke="#242424"/>
+      <rect x="-116" y="-52" width="4" height="104" rx="2" fill="#FFFFFF" opacity="0.86"/>
+      <circle cx="90" cy="-27" r="5" fill="#FFFFFF" opacity="0.86"/>
+      <text x="-88" y="-7" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="650">Architecture</text>
+      <text x="-88" y="21" fill="#F6F6F6" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="650">&amp; Consulting</text>
+      <text x="-88" y="42" fill="#646464" font-family="JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="10" letter-spacing="0.14em">ARCH</text>
+    </g>
+</svg>
